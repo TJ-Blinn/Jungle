@@ -13,14 +13,11 @@
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th colspan="2">Name</th>          
-          <th></th>
+          <th>Name</th>          
         </tr>
       </thead>
       <tbody>
-        <% @categories.each do |category| %>
-        <%= render category %>
-        <% end %>
+         <%= render @categories %>
       </tbody>
     </table>
 

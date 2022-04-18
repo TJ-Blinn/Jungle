@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   #force users to login before they can see the actions in this controller. 
-  before_filter :authorize
+  
   
   private
 

@@ -2,13 +2,6 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
-## Additional Steps for Apple M1 Machines
-
-1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)
-1. Install ImageMagick `brew install imagemagick imagemagick@6 --build-from-source`
-1. Remove Gemfile.lock
-1. Replace Gemfile with version provided [here](https://gist.githubusercontent.com/FrancisBourgouin/831795ae12c4704687a0c2496d91a727/raw/ce8e2104f725f43e56650d404169c7b11c33a5c5/Gemfile)
-
 ## Setup
 
 1. Run `bundle install` to install dependencies
@@ -20,24 +13,38 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 7. Put Stripe (test) keys into appropriate .env vars
 8. Run `bin/rails s -b 0.0.0.0` to start the server
 
-## Stripe Testing
+---
+
+Stripe Testing
 
 Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
 
-More information in their docs: <https://stripe.com/docs/testing#cards>
+More information in their docs: https://stripe.com/docs/testing#cards
+
+---
 
 ## Dependencies
 
 - Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 - PostgreSQL 9.x
 - Stripe
+- BCrypt
 
-## Db
+---
 
-The rake db:setup command, which in turn calls the rake db:schema:load command, uses this schema file to create the structure of our database from scratch. This is more efficient and reliable than running all the migrations from start to finish. However, database migrations are still needed for future changes to the database schema.
+## Images
 
-## Endpoints/Routes
-
-To see what this declarative syntax yields in terms of endpoints, run the following command from within the project folder. all the different URL endpoints (ex: GET /cart) and where they map to (or are dispatched to) when these HTTP requests come in.
-
-- bin/rake routes
+1. Login Signup
+   ![login_signup ](./img/login_signup.png "Login Signup image")
+2. Sold Out Badge
+   ![sold_out_badge](./img/sold_out_badge.png "Soldout Badge image")
+3. New Product Page
+   ![new_product_page](./img/new_product_page.png "New Product image")
+4. New Category
+   ![new_category](./img/new_category.png "New Category image")
+5. empty_cart
+   ![empty_cart](./img/empty_cart.png "Empty Cart image")
+6. pay_in_cart_w_Stripe
+   ![pay_in_cart_w_Stripe](./img/pay_in_cart_w_Stripe.png "Pay In Cart With Stripe image")
+7. Continue Shopping
+   ![continue_shopping](./img/continue_shopping.png "Continue Shopping image")

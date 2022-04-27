@@ -15,6 +15,17 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ---
 
+## Testing
+
+1. Install the new dependency for your project: `bundle # aka bundle install`
+2. Run Rspec one-time generator: `bin/rails generate rspec:install`
+3. Generate the binstub so you can run bin/rspec instead of bundle exec rspec from within the project directory: `bundle binstubs rspec-core`
+4. generate a new model `bin/rails g model [model name]` to create new \_spec files
+5. Run the migration to create the new table `bin/rake db:migrate`
+6. Run the specs again to see this newly generated model spec run `bin/rspec`
+
+---
+
 Stripe Testing
 
 Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.

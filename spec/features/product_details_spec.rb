@@ -21,7 +21,22 @@ RSpec.feature "On Homepage, Visitor clicks on product to navigate to details pag
 
   # click one of the product partials in order to navigate directly to a product detail page
 
-
+  scenario "User clicks product 1's details" do
+    # Act
+    visit root_path
+    
+    #Exercise
+    first("article.product").find_link("Details").click
+    
+    # Verify
+    # Checking to see if unique elements have generated specific to product show.html.erb
+    expect(page).to have_css 'article.product-detail'
+    
+    # Debug
+    # puts "Current Page----->#{page.html}"
+    save_screenshot
+    
+  end
 
 
 end

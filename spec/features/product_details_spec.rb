@@ -1,8 +1,7 @@
 require 'rails_helper'
 
 RSpec.feature "On Homepage, Visitor clicks on product to navigate to details page ", type: :feature, js: true do
-  pending "add some scenarios (or delete) #{__FILE__}"
-
+  
   # setup phase that adds 10 products using the RSpec before :each block:
   # SETUP
   before :each do
@@ -41,4 +40,4 @@ RSpec.feature "On Homepage, Visitor clicks on product to navigate to details pag
 
 end
 
-# run test => bin/rspec spec/features
+# run test => bin/rspec spec/features/product_details_spec.rb
